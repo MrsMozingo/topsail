@@ -1,0 +1,243 @@
+/* Main */
+.site {
+    display: grid;
+    grid-template-rows: auto 1fr auto; /* Header, main content, footer */
+    grid-template-columns: 100%;
+  }
+  
+  .masthead, .main-area, .footer {
+    /* Decide if this needs to be changed */
+  }
+
+  .main-section {
+    color:#2c2946;
+  }
+
+  .side-by-side-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+.side-by-side-section .side-by-side:nth-of-type(1),
+.side-by-side-section .side-by-side:nth-of-type(4) {
+    background: #09d0a8;
+    color: #2c2946;
+}
+
+.side-by-side-section .side-by-side:nth-of-type(1) a,
+.side-by-side-section .side-by-side:nth-of-type(4) a {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 50px;
+    background-color: #b0e1ed;
+    color: #2c2946;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.side-by-side-section .side-by-side:nth-of-type(2),
+.side-by-side-section .side-by-side:nth-of-type(3) {
+    background: #2c2946;
+    color: white;
+}
+
+.side-by-side-section .side-by-side:nth-of-type(2) a,
+.side-by-side-section .side-by-side:nth-of-type(3) a {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 50px;
+    background-color: #b0e1ed;
+    color: #2c2946;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.side-by-side-section .side-by-side a:hover {
+    font-weight: bold;
+}
+
+.side-by-side-section .side-by-side .side-by-side-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 15px;
+}
+ 
+
+body {
+    margin: 0;
+}
+
+body, button, input, select, textarea {
+    font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+	font-size: 20px;
+	line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    clear: both;
+    font-family: 'Varta', 'Helvetica', 'Arial', sans-serif;
+}
+
+p {
+    margin-bottom: 1.5em;
+}
+
+
+/* Header and Nav*/
+.topnav {
+    background-color: #2c2946;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: #09d0a8;
+    color: white;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+
+@media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {
+        display: none;
+    }
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    .side-by-side-section {
+        grid-template-columns: 1fr;
+      }
+      
+      /* Reset .side-by-side divs */
+      .side-by-side-section .side-by-side {
+        background: #2c2946;
+        color: white;
+      }
+      
+      .side-by-side-section .side-by-side:nth-of-type(odd) {
+        background: #09d0a8;
+        color: #2c2946;
+      }
+      
+      .side-by-side-section .side-by-side:nth-of-type(even) {
+        background: #2c2946;
+        color: white;
+      }
+}
+
+/* Sticky Navbar CSS THIS IS NOT DOING ANYTHING RIGHT NOW - DELETE LATER? */
+.topnav {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo img {
+    width: 100%;
+    max-height: 20vh;
+    margin: 0 auto;
+}
+
+
+/* masthead section styling */
+.logo,
+.title-text {
+    text-align: center;
+    color: #2c2946;
+}
+
+.logo {
+    /* font-size: 8em; */
+}
+
+.title-text {
+    margin-top: -3.5em;
+    margin-bottom: 1.5em;
+    font-size: 2em;
+    text-shadow:
+    -1px -1px 0 rgb(255, 255, 205),  
+    1px -1px 0 rgb(255, 255, 205),
+    -1px 1px 0 rgb(255, 255, 205),
+    1px 1px 0 rgb(255, 255, 205); 
+}
+
+
+/* main content section styling */
+.main-content {
+    background-color: #89e7ff64;
+    padding: 2em;
+}
+
+/* side-by-side section styling */
+.side-by-side-section {
+    background-color: #ffc68964; /* WHY ISN'T THIS WORKING? */
+    padding: 2em;
+}
+
+.side-by-side {
+    padding: 2em;
+    background: #09d0a8;
+    color: white;
+    border-radius: 20px;
+}
+
+.side-by-side:last-of-type {
+    background: #2c2946;
+}
+
+
+
+/* Footer styling */
+.footer {
+    padding: 2em;
+    background: #b0e1ed;
+    color: #2c2946;
+    text-align: center;
+}
+
+.footer a {
+    color: #2c2946;
+    text-decoration: none;
+}
+
+.footer a:hover,
+.footer a:focus {
+    font-weight: bold;
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Visit Topsail</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Varta:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" type="text/css" media="all">
+    <script src="https://kit.fontawesome.com/680cef0ad1.js" crossorigin="anonymous"></script>
+</head>
+<body class="site">
+    <header class="masthead">
+        <div class="logo">
+            <img src="images/placeholder1.jpg" alt="Topsail Beach">
+        </div>
+        <h2 class="title-text">Places to Eat</h2>
+        <nav class="topnav" id="myTopnav">
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">☰</a>
+            <a href="index.html">Home</a>
+            <a href="events.html">Events</a>
+            <a href="lodging.html">Lodging</a>
+            <a href="food.html" class="active">Food</a>
+            <a href="planner.html">Plan Your Trip</a>
+        </nav>
+    </header>
+
+    <main id="content" class="main-area">
+        <section class="main-section">
+            <div class="main-content">
+                <h2 class="content-title">Taste Topsail's Culinary Delights</h2>
+                <div class="main-text">
+                    <p>Embark on a culinary journey through Topsail's diverse dining scene. From fresh seafood caught daily to gourmet restaurants and charming local cafes, there's a flavor for every palate. Indulge in delicious dishes and find your new favorite spot.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Grid Section -->
+        <section class="side-by-side-section">
+            <!-- Events Section -->
+            <div class="side-by-side">
+                <h2 class="content-title">Discover Local Events</h2>
+                <img src="images/event-concert2.jpg" alt="Man on stage playing a guitar" class="side-by-side-image">
+                <p>Dive into Topsail's vibrant community by exploring our rich calendar of events! From lively summer festivals to serene beach clean-ups, there's something for everyone to enjoy. Experience local traditions, arts, and entertainment firsthand.</p>
+                <a href="events.html">Explore Events</a>
+            </div>
+            <!-- Lodging Section -->
+            <div class="side-by-side">
+                <h2 class="content-title">Find Your Perfect Stay</h2>
+                <img src="images/lodging-beachhouse.jpg" alt="Beautiful white beach house on the ocean" class="side-by-side-image">
+                <p>Your ideal getaway deserves the perfect place to rest. Whether you're seeking a cozy beachfront cottage, a luxurious hotel with ocean views, or a convenient vacation rental, Topsail has lodging options to suit every taste and budget.</p>
+                <a href="lodging.html">Discover Lodging Options</a>
+            </div>
+            <!-- Food Section -->
+            <div class="side-by-side">
+                <h2 class="content-title">Taste Topsail's Culinary Delights</h2>
+                <img src="images/food-cheers.jpg" alt="Couple making toast over large table of food" class="side-by-side-image">
+                <p>Embark on a culinary journey through Topsail's diverse dining scene. From fresh seafood caught daily to gourmet restaurants and charming local cafes, there's a flavor for every palate. Indulge in delicious dishes and find your new favorite spot.</p>
+                <a href="food.html">Explore Dining Options</a>
+            </div>
+            <!-- Plan Your Trip Section -->
+            <div class="side-by-side">
+                <h2 class="content-title">Your Topsail Adventure Awaits</h2>
+                <img src="images/planning-love.jpg" alt="Man and woman on beach in love" class="side-by-side-image">
+                <p>Planning your trip to Topsail has never been easier. Whether you're here for relaxation, adventure, or a bit of both, our trip planner has all the resources you need to create your next family vacation or an unforgettable romantic weekend getaway.</p>
+                <a href="planner.html">Start Planning Your Trip</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        Designed for Visit Topsail<br>
+        By <a href="https://tinyurl.com/ParkerMozingoPortfolio">Parker Mozingo Designs</a><br>
+        Follow us on:
+        <a href="https://facebook.com/townoftopsailbeach/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook"></i></a> |
+        <a href="https://twitter.com/townoftopsail?lang=en" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-x-twitter"></i></a>
+    </footer>
+
+    <script>
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+    </script>
+</body>
+</html>
